@@ -1,0 +1,45 @@
+Page{
+  background-color: #b3d4db;
+  height: 100%;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.user-image{
+  width: 128px; 
+  height: 128px;
+  margin-top: 160rpx;
+}
+
+.user-name{
+  font-size: 32rpx;
+  font-weight: bold;
+  /* font-family: MicroSoft Yahei; 复用率高的样式写在全局wxss中 */
+}
+
+.moto-container{
+  margin-top: 200rpx;
+  border: 1px solid #405f80;
+  border-radius: 5px;
+  /* 这个只能保证水平居中 */
+  text-align: center;
+  height: 80rpx;
+  width: 200rpx;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.moto{
+  /* margin-top: 20rpx; */
+  color: #405f80;
+  line-height: 80rpx;
+  font-size: 22rpx;
+  font-weight: bold;
+  /* font-family: MicroSoft Yahei; */
+}

@@ -1,0 +1,32 @@
+<view class='container'>
+  <swiper indicator-dots='true' autoplay='true'>
+    <swiper-item class='e'><image
+    class='swpier-image' 
+    src='/image/naruto-01.png'></image></swiper-item>
+    <swiper-item><image
+    class='swpier-image' 
+    src='/image/naruto-02.png'></image></swiper-item>
+    <swiper-item><image
+    class='swpier-image' 
+    src='/image/naruto-03.png'></image></swiper-item>
+  </swiper>
+</view>
+
+<view wx:for='{{process_key}}' wx:key='' wx:for-item='item'>
+<!-- 要想自定义标签属性必须以“data-”开头，并且用{{}}括起来 -->
+  <view class='post-container'  bindtap='onPostTap' data-id='{{item.postId}}'>
+    <view class='post-author-date'>
+      <image src='/image/avatar/barman.png'></image>
+      <text>{{date}}</text>
+    </view>
+    <text class='post-title'>{{title}}</text>
+    <image class='post-image' src="{{item.post_image}}"></image>
+    <text class='post-content' decode='true'>{{item.content}}</text>
+    <view class='post-like'>
+      <image src='/image/icon/amnesia-anime.png'></image>
+      <text>11</text>
+      <image src='/image/icon/avatar-the-last-airbender.png'></image>
+      <text>22</text>
+    </view>
+</view>
+</view>

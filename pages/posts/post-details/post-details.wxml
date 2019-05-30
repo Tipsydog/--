@@ -1,0 +1,18 @@
+<view class='container'>
+  <image class='head-image' src='{{post_image}}'></image>
+  <view class='author-date'>
+    <image class='avatar' src='/image/icon/bleach-anime.png'></image>
+    <text class='author'>某人</text>
+    <text class='const-date'>发表于</text>
+    <text class='date'>时间</text>
+  </view> 
+  <text class='tilte'>这条是文章的标题</text>
+  <view class='cut'>
+    <view class='cut-line'></view>
+    <view>
+      <image class='cut-img1' bindtap='onCollectTap' src='/image/tab/naruto-05.png'></image>
+      <image class='cut-img2' bindtap='onShareTap' src='/image/tab/naruto-06.png'></image>
+    </view>
+  </view>
+  <text class='content'>{{content}}</text>
+</view>
